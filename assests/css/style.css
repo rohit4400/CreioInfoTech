@@ -1,0 +1,143 @@
+body{
+  margin: 0;
+}
+.header {
+  overflow: hidden;
+  background-color: #c5dbf2;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.bg-div{
+   background-color:skyblue;
+   overflow: hidden;
+}
+h1{
+text-align: center;
+font-weight: 600;
+font-size: 35px;
+font-style: bold;
+color: black;
+}
+h2{
+  color: black;
+}
+P::first-letter{
+  font-size: 250%;
+}
+.inbound{
+    background-color:aquamarine;
+    border:none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    display: inline-block;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color:red ;
+    color: skyblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 20px;
+  } 
+
+  * {
+    box-sizing: border-box;
+   
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: blue; 
+  }
+
+footer{
+width: 100%;
+bottom: 0px;
+background-color: skyblue;
+color: cadetblue;
+position: fixed;
+padding-top: 30px;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+}
